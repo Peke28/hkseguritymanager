@@ -1,4 +1,3 @@
-# hkseguritymanager
 
 # IRC Client Script
 
