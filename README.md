@@ -1,51 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Currículum Vitae - Hervé Nelson Molina</title>
 
-# IRC Client Script
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #ffffff;
+        margin: 0;
+        padding: 0;
+    }
 
-Este script es un cliente básico para conectarse a un servidor IRC, interactuar con canales y enviar mensajes. El script permite cambiar canales, cambiar apodos y enviar mensajes, además de manejar respuestas del servidor IRC.
+    .container {
+        display: flex;
+        max-width: 900px;
+        margin: 40px auto;
+        border: 1px solid #dcdcdc;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        border-radius: 10px;
+        overflow: hidden;
+    }
 
-## Requisitos
+    /* LADO IZQUIERDO */
+    .left {
+        width: 35%;
+        background: #f2f6ff;
+        padding: 20px;
+        box-sizing: border-box;
+        border-right: 2px solid #e1e1e1;
+    }
 
-- Python 3.x
-- `socket`, `time`, `os`, `threading` (incluidos en la biblioteca estándar de Python)
+    .photo {
+        width: 100%;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        border: 2px solid #1e3a8a;
+    }
 
-## Configuración
+    h2.section-title {
+        color: #1e3a8a;
+        margin-top: 25px;
+        border-left: 4px solid #1e3a8a;
+        padding-left: 8px;
+    }
 
-Edita el script para configurar los detalles del servidor IRC:
+    /* LADO DERECHO */
+    .right {
+        width: 65%;
+        padding: 30px;
+        box-sizing: border-box;
+    }
 
-- `SERVER`: Dirección del servidor IRC.
-- `PORT`: Puerto del servidor IRC (por defecto es 6667).
-- `CHANNEL`: Canal al que te unirás al conectarte.
-- `NICKNAME`: Apodo que usarás en el servidor IRC.
-- `REALNAME`: Nombre real que se mostrará.
-- `USERNAME`: Nombre de usuario.
+    h1 {
+        color: #1e3a8a;
+        margin-bottom: 10px;
+    }
 
-## Cómo Ejecutar
+    .section {
+        margin-top: 25px;
+    }
 
-1. **Descargar el script**: Descarga el archivo `irc_client.py` a tu máquina local o servidor.
+    .section-title {
+        font-size: 20px;
+        font-weight: bold;
+    }
 
-2. **Instalar Python**: Asegúrate de que Python esté instalado en tu máquina. Puedes verificar esto ejecutando `python --version` o `python3 --version`.
+    .item {
+        margin-bottom: 12px;
+        line-height: 1.5;
+    }
 
-3. **Ejecutar el script**:
-   - Abre una terminal.
-   - Navega al directorio donde se encuentra `irc_client.py`.
-   - Ejecuta el script usando Python:
-     ```bash
-     python irc_client.py
-     ```
-     o
-     ```bash
-     python3 irc_client.py
-     ```
+    a {
+        color: #1e3a8a;
+        font-weight: bold;
+        text-decoration: none;
+    }
 
-4. **Usar el menú interactivo**:
-   - En el menú, puedes elegir entre las siguientes opciones:
-     1. Enviar mensaje
-     2. Cambiar canal
-     3. Cambiar apodo
-     4. Salir
-     5. Salir y desconectar
+</style>
+</head>
 
-5. **Finalizar la ejecución**:
-   - Para detener el script, selecciona la opción de salir en el menú. Si seleccionas "Salir y desconectar", el script también enviará un comando para salir del canal antes de finalizar.
+<body>
 
-## Ejemplo de Salida
+<div class="container">
+
+    <!-- LADO IZQUIERDO -->
+    <div class="left">
+        <img src="tu_foto.jpg" class="photo" alt="Foto de Hervé Nelson Molina">
+
+        <h2 class="section-title">Datos Personales</h2>
+        <p><b>Nombre:</b> Hervé Nelson Molina</p>
+        <p><b>Dirección:</b> General Alvear, Mendoza, Argentina</p>
+        <p><b>Teléfono:</b> 2625-430496</p>
+        <p><b>Email:</b> hervenelson1993@gmail.com</p>
+
+        <h2 class="section-title">Links</h2>
+        <p><a href="#" target="_blank">Ver perfil profesional</a></p>
+        <p><a href="#" target="_blank">Descargar CV PDF</a></p>
+    </div>
+
+    <!-- LADO DERECHO -->
+    <div class="right">
+        <h1>Hervé Nelson Molina</h1>
+        <p style="font-size: 18px;">
+            Profesional versátil con experiencia en atención al cliente, marketing digital, redes sociales y soporte en tareas administrativas. Manejo de herramientas digitales, diseño básico y plataformas de freelancer. Perfil adaptable, responsable y orientado a resultados.
+        </p>
+
+        <!-- EXPERIENCIA -->
+        <div class="section">
+            <h2 class="section-title">Experiencia Laboral</h2>
+
+            <div class="item">
+                <b>Marketing Digital y Redes Sociales</b><br>
+                Gestión de contenido, publicidad básica, edición ligera y manejo de interacción con usuarios.
+            </div>
+
+            <div class="item">
+                <b>Atención al Cliente</b><br>
+                Comunicación efectiva, resolución de problemas y soporte general.
+            </div>
+
+            <div class="item">
+                <b>Proyectos Freelance</b><br>
+                Manejo de plataformas, tareas digitales administrativas, diseño básico y soporte remoto.
+            </div>
+        </div>
+
+        <!-- HABILIDADES -->
+        <div class="section">
+            <h2 class="section-title">Habilidades</h2>
+            <ul>
+                <li>Marketing y publicidad</li>
+                <li>Gestión de redes sociales</li>
+                <li>Atención al cliente</li>
+                <li>Herramientas digitales y ofimática</li>
+                <li>Diseño básico</li>
+                <li>Organización y comunicación efectiva</li>
+            </ul>
+        </div>
+
+        <!-- FORMACIÓN -->
+        <div class="section">
+            <h2 class="section-title">Formación Académica</h2>
+            <div class="item">
+                <b>Secundario Completo</b>  
+                — Certificado finalizado.
+            </div>
+        </div>
+
+        <!-- REFERENCIAS -->
+        <div class="section">
+            <h2 class="section-title">Referencias</h2>
+            <p>Disponibles a solicitud.</p>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
